@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3ca8b1c215.js"
+      crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Todo app</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Todo</h1>
+      <div class="theme">
+        <span>light</span>
+      </div>
+    </header>
+
+    <main>
+      <form autocomplete="off" class="form" id="todo-form">
+        <label for="input-field" class="sr-only">todo</label>
+        <input
+          class="todo-input"
+          name="todo"
+          id="input-field"
+          type="text"
+          placeholder="Create a new todo…" />
+        <ul class="todos-ul" id="todos-ul"></ul>
+      </form>
+      <div class="instructions">
+        <small
+          >How-to:<br />
+          <i class="fa-thin fa-pen-to-square"></i>Add a todo.<br />
+          <i class="fa-regular fa-circle-check"></i>Left click to toggle
+          completed.<br />
+          <i class="fa-regular fa-trash-can"></i>Right click to delete
+          todo.</small
+        >
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="accessibility.js"></script>
+  </body>
+</html>
